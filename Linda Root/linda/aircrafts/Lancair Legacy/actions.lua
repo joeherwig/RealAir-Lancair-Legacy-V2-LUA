@@ -3,11 +3,13 @@
 -- ## Electric  ##
 
 function Master_Batterie_on ()
-	ipc.writeSB ("3102",1)
+    ipc.writeSB ("3102",1)
+    DspShow ("BATT", "on")
 end
 
 function Master_Batterie_off ()
-	ipc.writeSB ("3102",0)
+    ipc.writeSB ("3102",0)
+    DspShow ("BATT", "off")
 end
 
 function Generator_on ()
